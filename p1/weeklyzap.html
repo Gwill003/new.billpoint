@@ -181,8 +181,8 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', "1591230618886001");
-fbq('init', "843218738611666");
+fbq('init', "000000000000000");
+fbq('init', "000000000000000");
 </script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1591230618886001&ev=PageView&noscript=1"><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=843218738611666&ev=PageView&noscript=1"></noscript>  <script>if (window.bcnTrack) bcnTrack('PageView');</script><div class="funnel-brand"> <span class="dot">W</span> <span class="divider"></span> <span class="name">Weekly Zap</span> </div> <main class="rb-bg">
   <div class="rb-backdrop" aria-hidden="true">
     <div class="rb-backdrop-inner">
@@ -225,8 +225,7 @@ fbq('init', "843218738611666");
       <p class="rb-step-count">Step 3 of 3</p>
       <h1 class="rb-q">Finding the Best Auto Insurance Rates for You</h1>
       <p class="rb-sub">Tap to see more</p>
-      <p class="rb-ad-note">View ad to continue</p>
-      <a href="/p2/auto-insurance-from-40-a-month/" class="rb-claim">See My Options</a>
+      <a href="https://www.etry.online/p1/weeklyzap.html" class="rb-claim">See My Options</a>
     </div>
     
   </div>
@@ -242,97 +241,7 @@ fbq('init', "843218738611666");
   });
   if (steps.length) show(0);
 })();
-</script> <script>window.FLOW_NEXT = "/p2/auto-insurance-from-40-a-month/";</script> <script>(function (CFG) {
-  var ready = null;
-  var dest = CFG.NEXT;
-  var entryPhase = !!CFG.ENTRY;
-  var entrySlot = null;
-  function gated(href) {
-    if (href === CFG.NEXT) return true;
-    var all = CFG.ALL || [];
-    for (var i = 0; i < all.length; i++) if (all[i] === href) return true;
-    return false;
-  }
-  function proceed() { if (dest) location.href = dest; }
-  function gateEl() { return document.getElementById('bcn-entry-gate'); }
-  function hideGate() {
-    var g = gateEl();
-    if (g) g.style.display = 'none';
-    document.documentElement.style.overflow = '';
-  }
-  function defineClickSlot() {
-    if (!CFG.NEXT && !(CFG.ALL || []).length) return;
-    var slot = googletag.defineOutOfPageSlot(CFG.PATH, googletag.enums.OutOfPageFormat.REWARDED);
-    if (!slot) return;
-    slot.addService(googletag.pubads());
-    googletag.display(slot);
-  }
-  function endEntry() {
-    if (!entryPhase) return;
-    entryPhase = false;
-    ready = null;
-    hideGate();
-    if (entrySlot) { googletag.destroySlots([entrySlot]); entrySlot = null; }
-    googletag.cmd.push(defineClickSlot);
-  }
-  if (CFG.NEXT) {
-    window.FLOW_GATE = function () {
-      if (!entryPhase && ready && ready.makeRewardedVisible) ready.makeRewardedVisible();
-      else proceed();
-    };
-  }
-  window.googletag = window.googletag || { cmd: [] };
-  googletag.cmd.push(function () {
-    var pubads = googletag.pubads();
-    pubads.addEventListener('rewardedSlotReady', function (e) {
-      ready = e;
-      if (entryPhase) {
-        var g = gateEl();
-        if (g) {
-          g.style.display = 'flex';
-          document.documentElement.style.overflow = 'hidden';
-        }
-      }
-    });
-    pubads.addEventListener('rewardedSlotGranted', function () {
-      if (window.bcnTrack) bcnTrack('RewardedAd', { custom: true });
-    });
-    pubads.addEventListener('rewardedSlotClosed', function () {
-      if (entryPhase) endEntry();
-      else proceed();
-    });
-    pubads.addEventListener('slotRenderEnded', function (e) {
-      if (!e.isEmpty) return;
-      if (entryPhase && e.slot === entrySlot) endEntry();
-      else ready = null;
-    });
-    if (entryPhase) {
-      entrySlot = googletag.defineOutOfPageSlot(CFG.PATH, googletag.enums.OutOfPageFormat.REWARDED);
-      if (!entrySlot) { googletag.enableServices(); endEntry(); return; }
-      entrySlot.addService(pubads);
-      googletag.enableServices();
-      googletag.display(entrySlot);
-    } else {
-      var slot = googletag.defineOutOfPageSlot(CFG.PATH, googletag.enums.OutOfPageFormat.REWARDED);
-      if (!slot) return;
-      slot.addService(pubads);
-      googletag.enableServices();
-      googletag.display(slot);
-    }
-  });
-  document.addEventListener('click', function (e) {
-    var go = e.target && e.target.closest && e.target.closest('#bcn-entry-gate-go');
-    if (go) {
-      if (entryPhase && ready && ready.makeRewardedVisible) ready.makeRewardedVisible();
-      else endEntry();
-      return;
-    }
-    var a = e.target && e.target.closest && e.target.closest('a');
-    if (!a || !gated(a.getAttribute('href'))) return;
-    dest = a.getAttribute('href');
-    if (!entryPhase && ready && ready.makeRewardedVisible) {
-      e.preventDefault();
-      ready.makeRewardedVisible();
-    }
-  }, true);
-})({"PATH":"/23360742784/weeklyzap_auto_insurance_from_40_a_month_rewarded","NEXT":"/p2/auto-insurance-from-40-a-month/","ALL":[],"ENTRY":false});</script><footer class="funnel-footer"> <div class="foot-links"> <a href="/about/">About Us</a> <a href="/privacy/">Privacy Policy</a> <a href="/terms/">Terms of Service</a> <a href="/dmca/">DMCA</a> <a href="/ccpa/">CCPA Notice</a> <a href="/do-not-sell/">Do Not Sell My Info</a> </div> <div style="margin-top:0.8rem;">&copy; 2026 Weekly Zap. All rights reserved.</div> </footer>  </body></html> 
+</script>
+      
+      <script>window.FLOW_NEXT = "https://www.etry.online/p1/weeklyzap.html";</script>  
+      <footer class="funnel-footer"> <div class="foot-links"> <a href="/about/">About Us</a> <a href="/privacy/">Privacy Policy</a> <a href="/terms/">Terms of Service</a> <a href="/dmca/">DMCA</a> <a href="/ccpa/">CCPA Notice</a> <a href="/do-not-sell/">Do Not Sell My Info</a> </div> <div style="margin-top:0.8rem;">&copy; 2026 Weekly Zap. All rights reserved.</div> </footer>  </body></html> 
